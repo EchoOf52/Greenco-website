@@ -1,0 +1,291 @@
+/* copyright © Shivam Sharma 2025 */
+
+@font-face {
+    font-family: DMSans;
+    src: url("./src/DMSans.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: DMSans;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    ::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+#page-1 {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(230 230 230);
+    position: relative;
+}
+
+#nav {
+    height: 100px;
+    width: 100%;
+    color: rgb(150 150 150);
+    font-size: 30px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 100px 0px;
+}
+
+#p1-content {
+    height: calc(100% - 100px);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#p1-content h1 {
+    color: rgb(150 150 150);
+    font-size: 220px;
+    line-height: 180px;
+    text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4),
+        0px 8px 13px rgba(0, 0, 0, 0.1),
+        0px 18px 23px rgba(0, 0, 0, 0.1);
+}
+
+
+#page-1 img {
+    width: 50%;
+    position: absolute;
+    top: 35%;
+    left: 60%;
+    filter: drop-shadow(15px 20px 7px rgb(100 100 100));
+}
+
+#page-2 {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(100 100 100);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#cacti {
+    width: 35%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+
+#cacti img {
+    width: 100%;
+    background-size: cover;
+}
+
+#cacti-content {
+    width: 45%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#cacti-content p {
+    width: 60%;
+    color: rgb(150 150 150);
+    font-size: 20px;
+    text-align: justify;
+    padding-left: 40px;
+}
+
+#page-3 {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(230 230 230);
+    display: flex;
+}
+
+#pt-pla-cont {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#pt-pla-cont img {
+    width: 80%;
+}
+
+#pt-pla {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#pt-pla p {
+    width: 80%;
+    font-size: 20px;
+    text-align: justify;
+    color: rgb(100 100 100);
+}
+
+@media (min-width: 320px) and (max-width: 426px) {
+    #nav {
+        height: 40px;
+        font-size: 30px;
+        padding: 0px 50px 0px;
+    }
+
+    #p1-content {
+        height: calc(100% - 40px);
+    }
+
+    #p1-content h1 {
+        color: rgb(150 150 150);
+        font-size: 75px;
+        line-height: 70px;
+    }
+
+    #page-1 img {
+        width: 100%;
+        position: absolute;
+        top: 55%;
+        left: 40%;
+        filter: drop-shadow(15px 20px 7px rgb(100 100 100));
+    }
+
+    #page-2 {
+        flex-direction: column;
+    }
+
+    #cacti {
+        width: 50%;
+        height: 50%;
+    }
+
+    #cacti img {
+        width: 100%;
+        background-size: cover;
+    }
+
+    #cacti-content {
+        width: 100%;
+        height: 50%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #cacti-content p {
+        width: 80%;
+        height: 50%;
+        font-size: 12px;
+        padding-left: 0px;
+    }
+
+    #page-3 {
+        height: 100%;
+        width: 100%;
+        background-color: rgb(230 230 230);
+        display: flex;
+        flex-direction: column;
+    }
+
+    #pt-pla-cont {
+        width: 60%;
+        height: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #pt-pla-cont img {
+        width: 100%;
+    }
+
+    #pt-pla {
+        width: 100%;
+        height: 50%;
+    }
+
+    #pt-pla p {
+        width: 80%;
+        font-size: 10px;
+        text-align: justify;
+        color: rgb(100 100 100);
+    }
+}
+
+@media (min-width: 600px) and (max-width: 1000px) {
+    #p1-content h1 {
+        font-size: 120px;
+        line-height: 150px;
+    }
+
+    #page-1 img {
+        width: 70%;
+        top: 55%;
+        left: 50%;
+    }
+
+    #cacti {
+        width: 45%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    #cacti img {
+        width: 90%;
+    }
+
+    #cacti-content {
+        width: 45%;
+        height: 100%;
+    }
+
+    #cacti-content p {
+        width: 80%;
+        font-size: 15px;
+    }
+
+    #pt-pla-cont {
+        width: 50%;
+        height: 100%;
+    }
+
+    #pt-pla-cont img {
+        width: 80%;
+    }
+
+    #pt-pla {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #pt-pla p {
+        width: 80%;
+        font-size: 15px;
+        text-align: justify;
+        color: rgb(100 100 100);
+    }
+}
